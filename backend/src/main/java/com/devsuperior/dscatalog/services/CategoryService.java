@@ -61,7 +61,7 @@ public class CategoryService {
 
 	public void delete(Long id) {
 		try {
-		repository.deleteById(id);// TODO Auto-generated method stub
+		repository.deleteById(id);
 		}catch(EmptyResultDataAccessException e) {
 			throw new ResourceNotFoundException("Id não exise!");
 		}catch(DataIntegrityViolationException e) {
